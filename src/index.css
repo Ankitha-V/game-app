@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  height: 100%;
+}
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background-color:rgb(57, 89, 95);
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.App{
+  font-size: large;
+}
+.h1{
+  text-align: center;
+  margin-bottom: 1em;
+  color: rgb(247, 244, 244);
+}
+.h4{
+  color: aliceblue;
+}
+
+.class{
+  width: 15vh;
+  max-width: 15vw;
+  display: inline-block;
+  column-gap: 5px;
+ 
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.class1{
+  margin: 5px;
+  padding: 3px;
+  background-color: rgb(18, 194, 248);
+  border-radius: 5px;
+  height: calc(15vh);
+  max-height: calc(15vw);
+  
+  transform-style: preserve-3d ;
+  
+}
+  .any{
+    flex-direction: inline-block;
+  }
+  .style{
+    border: indianred;
+  margin: inherit;
+  }
+  .card-outer{
+    perspective: 100px;
+  }
+  
+
+  .any1{
+    flex-direction: inline-block;
+  }
+  .any3{
+    flex-direction: inline-block;
+  }
+.h1{
+  text-align: inherit;
+  size: 10px;
+}
+.class1.front{
+  display:block;
+}
+.class1.back{
+  background-color:  rgb(231, 28, 28);
+  
+ 
+}
+.class1.front, .class1.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.card-outer:hover .class1{
+  transform: rotateY(0);
+}
+.h1{
+  visibility: hidden;
+}

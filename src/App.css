@@ -1,0 +1,42 @@
+
+input{
+  height: 30x;
+  width: 300px;
+  font-size: medium;
+  text-align: center;
+
+}
+
+button{
+  height: 30px;
+  width: 300px;
+  font-size: medium;
+}
+.one{
+  border: 5px solid black;
+  padding: 1px;
+  width: 500px;
+  height: 300px;
+  background-color: blueviolet;
+  background-image: -moz-radial-gradient();
+  border-radius: 50;
+}
+.board{
+  width: 15vh;
+  max-width: 15vw;
+  display: inline-block;
+  gap: 10px;
+  margin: 20px auto;
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+.card{
+  background-color: gray;
+  border-radius: 5px;
+  height: calc(15vh);
+  max-height: calc(15vw);
+}
+.any{
+  display: inline-block;
+}
